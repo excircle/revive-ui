@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* Nucleo Icons Font Face */
+@font-face {
+  font-family: 'nucleo-icons';
+  src: url('/fonts/nucleo-icons.eot');
+  src: url('/fonts/nucleo-icons.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/nucleo-icons.woff2') format('woff2'),
+       url('/fonts/nucleo-icons.woff') format('woff'),
+       url('/fonts/nucleo-icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Nucleo Icon Base Class */
+.nc-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 'nucleo-icons';
+  font-size: inherit;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Nucleo Icon Definitions - Dashboard Icons */
+.nc-bank::before { content: "\ea0b"; }
+.nc-bell-55::before { content: "\ea0d"; }
+.nc-caps-small::before { content: "\ea1c"; }
+.nc-diamond::before { content: "\ea29"; }
+.nc-favourite-28::before { content: "\ea2b"; }
+.nc-globe::before { content: "\ea2e"; }
+.nc-layout-11::before { content: "\ea36"; }
+.nc-money-coins::before { content: "\ea3e"; }
+.nc-pin-3::before { content: "\ea42"; }
+.nc-settings-gear-65::before { content: "\ea49"; }
+.nc-single-02::before { content: "\ea50"; }
+.nc-spaceship::before { content: "\ea53"; }
+.nc-tile-56::before { content: "\ea5a"; }
+.nc-vector::before { content: "\ea61"; }
+.nc-zoom-split::before { content: "\ea64"; }
+.nc-refresh-69::before { content: "\ea44"; }
+.nc-calendar-60::before { content: "\ea1a"; }
+.nc-time-alarm::before { content: "\ea5b"; }
+.nc-minimal-left::before { content: "\ea3a"; }
+.nc-minimal-right::before { content: "\ea3b"; }
+.nc-world-2::before { content: "\ea63"; }
+
+:root {
+  --background: #ECE6DC;
+  --foreground: #1F2127;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-fraunces);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-fraunces), serif;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* Heading styles - Riverbank theme */
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Button styles - Riverbank theme */
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #1D1F25;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid currentColor;
+}
